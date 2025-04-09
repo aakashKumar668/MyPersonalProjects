@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+}
+nav {
+  font-family: "ubuntu", sans-serif;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 50px;
+  color: white;
+  list-style: none;
+}
+nav ul li {
+  padding: 0px 14px;
+}
+.brand img {
+  height: 45px;
+  padding: 0px 15px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  text-shadow: 6px 3px 3px rgb(231, 203, 165);
+}
+.container {
+  min-height: 71vh;
+  background-color: black;
+  color: white;
+  font-family: "varela round", sans-serif;
+  border-radius: 1rem;
+  width: 80%;
+  margin: 22px auto;
+  display: flex;
+  padding: 34px;
+  background-image: url("bg.jpg");
+  /* background-position: center; */
+  background-size: cover;
+}
+
+.bottom {
+  height: 91px;
+  position: sticky;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#myProgressBar {
+  width: 80vw;
+}
+.icons {
+  margin-top: 12px;
+}
+.songitem {
+  height: 42px;
+  background-color: #fff;
+
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.5rem;
+  margin: 12px 0px;
+}
+.songitem img {
+  width: 43px;
+  margin: 0px 16px;
+  border-radius: 2rem;
+}
+.timestamp {
+  margin: 0px 10px;
+}
+.timestamp i {
+  cursor: pointer;
+}
+.songInfo {
+  font-family: "varela round", sans-serif;
+  position: absolute;
+  left: 0px;
+}
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+.spanSongName {
+  height: 32px;
+  /* text-align: center; */
+  width: 23vw;
+  overflow: hidden;
+  padding: 9px 0px 0px 5px;
+}
+
+/* .songName{
+  position: relative;
+  animation: move-words 20s linear infinite;
+}
+
+
+@keyframes move-words {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}*/
+
+/* @media only screen and (max-width: 575.98px) {
+  #myProgressBar{
+    margin-top: 4px;
+  }
+}  */
+
+/* media (max-width: 575.98px) { ... } */
