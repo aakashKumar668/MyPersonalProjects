@@ -1,0 +1,55 @@
+.form-white.input-group > .form-control:focus {
+  border-color: #fff;
+  box-shadow: inset 0 0 0 1px #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+.logo {
+  width: 60px;
+}
+
+.mainCardContainer{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+}
+
+.learnMoreNews {
+  cursor: pointer;
+  transition: 1s;
+}
+.learnMainNews {
+  cursor: pointer;
+  transition: 1s;
+}
+.learnMoreNews:hover {
+  scale: 1.01;
+}
+.learnMainNews:hover {
+  scale: 1.01;
+}
+.mainMoreNewsContainer{
+ background: #1d1c1c9f;
+ display: none;
+}
+.closePopUp{
+  height: 40px;
+  width: 40px;
+  border: 1px solid #b3b3b3;
+  background-color: black;
+  color: rgb(10, 160, 247);
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px #fff;
+
+}
+.closePopUp:hover{
+  box-shadow: 0px 0px 7px #fff;
+  scale: 1.04;
+}
