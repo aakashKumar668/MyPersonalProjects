@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Righteous&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  min-height: 100vh;
+  width: 100%;
+  background: url(images/background-poster.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+nav {
+  padding: 25px 20px;
+  height: 7rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.849);
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.logo {
+  width: 15%;
+  margin-top: 10px;
+}
+.logo img {
+  width: 100%;
+  height: 3rem;
+}
+.navIcon {
+  height: 3rem;
+  padding-left: 10%;
+}
+.navIcon ul {
+  gap: 5rem;
+  display: flex;
+  list-style: none;
+  font-size: 1.4rem;
+  line-height: 40px;
+}
+
+.navIcon ul a {
+  transition: 500ms;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: grid;
+  text-align: center;
+}
+.navIcon ul a:hover {
+  color: rgb(156, 8, 8);
+}
+#search {
+  height: 2rem;
+  width: 15rem;
+  border-radius: 5px;
+  margin: auto;
+  font-size: 1.2rem;
+}
+#signUpBtn {
+  height: 2.5rem;
+  width: 5rem;
+  font-family: cursive;
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: rgb(74, 74, 255);
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: auto;
+  transition: 500ms;
+}
+#signUpBtn:hover {
+  color: rgb(74, 74, 255);
+  background-color: white;
+}
+.heroSection {
+  width: 100%;
+  height: 70vh;
+  margin: 30px auto;
+  display: flex;
+  background-color: #3c3c3ca1;
+  /* position: relative; */
+  overflow: hidden;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+
+.slide {
+  height: 95%;
+  width: 18%;
+  object-fit: cover;
+  transition: all ease-in-out 0.5s;
+}
+.slide:hover {
+  width: 26%;
+  border: 2px solid rgb(245, 245, 245);
+}
+
+.latest {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.836);
+}
+.latest h1 {
+  color: rgb(140, 180, 214);
+  border-bottom: 2px dashed white;
+  margin: 0px 30%;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.latestMovie {
+  margin: 50px 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.latestCard {
+  height: 512px;
+  width: 300px;
+  background-color: rgb(32, 32, 32);
+  border-radius: 14px;
+  box-shadow: 0px 0px 2px gray;
+  margin-top: 20px;
+}
+
+.latestCardImage {
+  border-radius: 14px;
+  width: 100%;
+}
+.latestCardImage img {
+  width: 100%;
+  height: 250px;
+  border-radius: 14px;
+}
+.latestMovieData {
+  width: 100%;
+  padding: 10px;
+  text-align: justify;
+}
+.latestMovieData h2 {
+  font-family: "Red Hat Display", sans-serif;
+  color: rgb(197, 197, 197);
+  font-size: 25px;
+  line-height: 40px;
+}
+.latestMovieNameContainer {
+  height: 40px;
+  overflow: hidden;
+}
+.latestMovieData ul {
+  gap: 20px;
+  list-style: none;
+  display: flex;
+  font-size: 14px;
+  color: rgb(156, 156, 156);
+}
+.movieDesc {
+  height: 134px;
+  font-size: 16px;
+  overflow: hidden;
+  color: white;
+}
+.movieDesc h3 {
+  color: rgb(51, 51, 51);
+  margin: 5px 0px;
+}
+#Description {
+  line-height: 15px;
+}
+#latestMovieActor {
+  color: red;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+.buttons {
+  display: flex;
+  margin: 10px 20px;
+}
+.buttons button {
+  height: 28px;
+  width: 85px;
+  background-color: #0000002e;
+  border-radius: 8px;
+  border: 2px solid #630000;
+  color: red;
+  font-size: 14px;
+}
+.buttons ul {
+  font-size: 24px;
+  margin-left: 50px;
+}
+.buttons ul li a {
+  margin-left: 26px;
+
+  color: white;
+}
+
+.pagebtn{
+  width: 100%;
+  height: 50px;
+}
+#prevPage{
+  height: 38px;
+    width: 91px;
+    font-size: 20px;
+    border: 2px solid #0a0a0a;
+    box-shadow: 0px 0px 6px darkseagreen;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 9px;
+    text-align: center;
+    position: absolute;
+    left: 100px;
+  
+}
+#prevPage span{
+  font-size: 16px;
+}
+#nextPage{
+  height: 38px;
+    width: 91px;
+    font-size: 20px;
+    border: 2px solid #0a0a0a;
+    box-shadow: 0px 0px 6px darkseagreen;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 9px;
+    position: absolute;
+  right: 100px;
+
+}
+footer {
+  height: 20vh;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  color: rgb(51, 51, 51);
+  align-items: center;
+  padding: 0px 50px;
+  box-shadow: 0px -1px 5px rgb(83, 83, 83);
+}
+footer h2 {
+  font-size: 20px;
+}
+#footerBar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 60px;
+
+  /* border-right: 2px solid gainsboro; */
+}
+#footerBar li a {
+  text-decoration: none;
+  color: rgb(165, 165, 165);
+  font-weight: bolder;
+  font-family: "Raleway", sans-serif;
+  transition: 0.5s;
+  font-size: 18px;
+}
+#footerBar li a:hover {
+  color: #630000;
+  border-bottom: 1px solid grey;
+  text-shadow: 0px 0px 2px gray;
+}
+#socialMediaBar {
+  width: 30%;
+  display: flex;
+  gap: 25px;
+}
+#socialMediaBar li {
+  list-style: none;
+  border: 1px solid gray;
+  padding: 10px 12px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+#socialMediaBar li:hover {
+  background-color: rgba(148, 68, 68, 0.623);
+  box-shadow: 0px 0px 5px skyblue;
+}
+#socialMediaBar li a {
+  text-decoration: none;
+}
+#socialMediaBar li a img {
+  width: 30px;
+}
