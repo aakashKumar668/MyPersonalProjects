@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Noto+Serif+JP&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Righteous&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Noto+Serif+JP&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Righteous&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainContainer {
+  width: 100%;
+  background: url(./images/background.jpg) no-repeat fixed;
+  background-size: cover;
+}
+nav {
+  padding: 10px 50px;
+  height: 20%;
+  width: 100%;
+  background-color: rgb(7 67 255 / 58%);
+  display: flex;
+  line-height: 30px;
+}
+.logoHeading {
+  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", seri;
+  font-size: 35px;
+  color: white;
+  letter-spacing: 2px;
+}
+.items {
+  margin: auto 50px;
+  height: 20%;
+}
+.items ul {
+  overflow: hidden;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  font-family: "Noto Serif JP", serif;
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(196, 0, 0);
+}
+.items ul li {
+  transition: 0.8s;
+  padding: 10px;
+  border-right: 2px solid rgb(248, 248, 248);
+}
+
+.items ul li:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.lang {
+  margin: auto;
+  height: 20px;
+}
+.lang option {
+  height: 28px;
+  width: 90px;
+  border: 2px solid black;
+  border-radius: 9px;
+}
+#login {
+  height: 30px;
+  width: 80px;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: rgb(0, 140, 255);
+  color: white;
+  margin: auto;
+  transition: 0.5s;
+}
+#login:hover {
+  color: rgb(0, 140, 255);
+  background-color: white;
+  border: 2px solid rgb(0, 140, 255);
+}
+/* this is main container css section */
+
+.article {
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: none;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+
+/* basic article elements styling */
+article h2 {
+  margin: 0 0 18px 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #28666e;
+}
+
+article a:focus {
+  outline: 1px dotted #28666e;
+}
+
+article a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #28666e;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/************************ 
+Generic layout (demo looks)
+**************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.articles {
+  display: grid;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin: 50px auto;
+  min-height: 50vh;
+}
+
+@media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
+  .article-body p {
+    display: none;
+  }
+}
+
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+  .article-body {
+    padding-left: 0;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* this is footer css section  */
+footer {
+  height: 20vh;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  color: rgb(51, 51, 51);
+  align-items: center;
+  padding: 0px 50px;
+  box-shadow: 0px -1px 5px rgb(83, 83, 83);
+}
+footer h2 {
+  font-size: 20px;
+}
+#footerBar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 60px;
+
+  /* border-right: 2px solid gainsboro; */
+}
+#footerBar li a {
+  text-decoration: none;
+  color: rgb(165, 165, 165);
+  font-weight: bolder;
+  font-family: "Raleway", sans-serif;
+  transition: 0.5s;
+  font-size: 18px;
+}
+#footerBar li a:hover {
+  color: #630000;
+  border-bottom: 1px solid grey;
+  text-shadow: 0px 0px 2px gray;
+}
+#socialMediaBar {
+  width: 30%;
+  display: flex;
+  gap: 25px;
+}
+#socialMediaBar li {
+  list-style: none;
+  border: 1px solid gray;
+  padding: 10px 12px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+#socialMediaBar li:hover {
+  background-color: rgba(148, 68, 68, 0.623);
+  box-shadow: 0px 0px 5px skyblue;
+}
+#socialMediaBar li a {
+  text-decoration: none;
+}
+#socialMediaBar li a img {
+  width: 30px;
+}
